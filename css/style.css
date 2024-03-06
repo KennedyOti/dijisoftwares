@@ -19,16 +19,16 @@ body {
 }
 
 a.btn-primary{
-	background-color: #1273eb;
-	border-color: #1273eb;
+	background-color: #096501;
+	border-color: #096501;
 }
 a.btn-primary:hover{
 	background-color: #323232;
 	border-color: #323232;
 }
 button.btn-primary{
-	background-color: #1273eb;
-	border-color: #1273eb;
+	background-color: #096501;
+	border-color: #096501;
 }
 button.btn-primary:hover{
 	background-color: #323232;
@@ -36,16 +36,16 @@ button.btn-primary:hover{
 }
 
 a.btn-secondary{
-	background-color: #1273eb;
-	border-color: #1273eb;
+	background-color: #096501;
+	border-color: #096501;
 }
 a.btn-secondary:hover{
 	background-color: #323232;
 	border-color: #323232;
 }
 button.btn-secondary{
-	background-color: #1273eb;
-	border-color: #1273eb;
+	background-color: #096501;
+	border-color: #096501;
 }
 button.btn-secondary:hover{
 	background-color: #323232;
@@ -69,7 +69,7 @@ button.btn-secondary:hover{
 }
 
 .top-bar{
-	background: #1273eb;
+	background: #096501;
 	padding: 4px 0px;
 }
 .social-media ul{

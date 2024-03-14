@@ -109,7 +109,7 @@
 			<!-- Map Column -->
 				<div class="col-lg-8 mb-4 contact-left">
 					<h3>Send us a Message</h3>
-					<form name="sentMessage" id="contactForm" novalidate>
+					<form onsubmit="sendEmail(); reset(); return false;" name="sentMessage" id="contactForm" novalidate>
 						<div class="control-group form-group">
 							<div class="controls">
 								<input type="text" placeholder="Full Name" class="form-control" id="name" required data-validation-required-message="Please enter your name.">
@@ -250,5 +250,21 @@
 <script src="js/owl.carousel.min.js"></script>
 <script src="js/jquery.fancybox.min.js"></script>
 <script src="js/script.js"></script>
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+<script>
+ function sendEmail(){
+	Email.send({
+    Host : "smtp.gmail.com",
+    Username : "dijisoftwares@gmail.com",
+    Password : "Diji@2024",
+    To : 'dijisoftwares@gmail.com',
+    From : document.getElementById("email").value,
+    Subject : "Contact Form Test",
+    Body : "And this is the body"
+}).then(
+  message => alert(message)
+);
+ }
+</script>
 </body>
 </html>

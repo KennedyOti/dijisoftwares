@@ -6,15 +6,40 @@ body {
     background-color: #0a60da;
 }
 
-.jumbotron {
-    margin-bottom: 0;
-    background: linear-gradient(to right, #0a60da, #004ba0);
+.home-section {
+    height: 100vh;
+    background: linear-gradient(to right, #93b1db, #7baee8);
+    display: flex;
+    align-items: center;
+    color: #fff;
+}
+
+.clip-path-image {
+    width: 100%;
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    clip-path: polygon(50% 0%, 100% 0%, 100% 100%, 0% 100%, 0% 50%);
+}
+
+.project-card .clip-path-image:hover {
+    transform: scale(1.05);
+}
+
+.project-card {
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.project-card:hover {
+    background-color: #f0f8ff;
+    transform: scale(1.03);
 }
 
 .card img {
     height: 200px;
     object-fit: cover;
 }
+
 
 .service-box {
     padding: 20px;

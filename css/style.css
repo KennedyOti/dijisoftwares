@@ -62,3 +62,81 @@ body {
 footer {
     background-color: #004ba0;
 }
+
+.navbar {
+    background-color: #343a40;
+    padding: 1em;
+    color: white;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.brand {
+    font-size: 1.5em;
+    color: white;
+    text-decoration: none;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-item {
+    position: relative;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    padding: 1em;
+    display: block;
+}
+
+.nav-link:hover {
+    background-color: #495057;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: #343a40;
+    top: 100%;
+    left: 0;
+    min-width: 150px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+}
+
+.dropdown-menu .dropdown-link {
+    padding: 0.75em 1em;
+    color: white;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-menu .dropdown-link:hover {
+    background-color: #495057;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
